@@ -23,8 +23,8 @@ The goals / steps of this project are the following:
 [image3]: ./examples/left_2017_02_15_21_58_28_965.jpg "left image"
 [image4]: ./examples/right_2017_02_15_21_58_28_965.jpg "right Image"
 [image5]: ./examples/placeholder_small.png "Recovery Image"
-[image6]: ./examples/placeholder_small.png "Normal Image"
-[image7]: ./examples/placeholder_small.png "Flipped Image"
+[image6]: ./examples/combine_image.jpg "Normal Image"
+[image7]: ./examples/combine_flipped_image.png "Flipped Image"
 
 ## Rubric Points
 ###Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/432/view) individually and describe how I addressed each point in my implementation.  
@@ -110,12 +110,11 @@ To capture good driving behavior, I first recorded two laps on track one using c
 
 
 
-To augment the data sat, I also flipped images and angles thinking that this would ... For example, here is an image that has then been flipped:
+To augment the data sat, I also flipped horizontally. For example, here is an image that has then been flipped:
 
 ![alt text][image6]
 ![alt text][image7]
 
-Etc ....
 
 After the collection process, I had 24008 number of data points (center+left+right images) and the total number for training became 48016 after applying horizontal flipping for data augmentation. I then preprocessed this data by normalizing into (-0.5, 0.5) range.
 
