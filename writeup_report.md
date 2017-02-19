@@ -24,7 +24,7 @@ The goals / steps of this project are the following:
 [image4]: ./examples/right_2017_02_15_21_58_28_965.jpg "right Image"
 [image5]: ./examples/placeholder_small.png "Recovery Image"
 [image6]: ./examples/combine_image.jpg "Normal Image"
-[image7]: ./examples/combine_flipped_image.png "Flipped Image"
+[image7]: ./examples/combine_flipped_image.jpg "Flipped Image"
 
 ## Rubric Points
 ###Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/432/view) individually and describe how I addressed each point in my implementation.  
@@ -112,7 +112,10 @@ To capture good driving behavior, I first recorded two laps on track one using c
 
 To augment the data sat, I also flipped horizontally. For example, here is an image that has then been flipped:
 
+Original (center/left/right image)
 ![alt text][image6]
+
+After flipped (center/left/right image)
 ![alt text][image7]
 
 
