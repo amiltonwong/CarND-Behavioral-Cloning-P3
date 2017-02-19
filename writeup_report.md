@@ -54,19 +54,19 @@ The model.py file contains the code for training and saving the convolution neur
 
 ####1. An appropriate model architecture has been employed
 
-My model consists of a convolution neural network with 5x5 filter sizes and depths between 6 and 16 (model.py lines 69-72) 
+My model consists of a convolution neural network with three conv layers with 5x5 filter sizes and corresponding depths : 6, 18, 30 (model.py lines 68-75) 
 
-The model includes RELU layers to introduce nonlinearity (code line 69, 72), and the data is normalized in the model using a Keras lambda layer (code line 65). 
+The model includes RELU layers to introduce nonlinearity (code line 69, 72, 75), and the data is normalized in the model using a Keras lambda layer (code line 65). 
 
 ####2. Attempts to reduce overfitting in the model
 
-The model contains dropout layers in order to reduce overfitting (model.py lines 21). 
+The model contains dropout layers in order to reduce overfitting (model.py lines 79,81,83). 
 
-The model was trained and validated on different data sets to ensure that the model was not overfitting (code line 10-16). The model was tested by running it through the simulator and ensuring that the vehicle could stay on the track.
+The model was trained and validated on different data sets to ensure that the model was not overfitting. The model was tested by running it through the simulator and ensuring that the vehicle could stay on the track.
 
 ####3. Model parameter tuning
 
-The model used an adam optimizer, so the learning rate was not tuned manually (model.py line 79).
+The model used an adam optimizer, so the learning rate was not tuned manually (model.py line 86).
 
 ####4. Appropriate training data
 
@@ -78,7 +78,7 @@ For details about how I created the training data, see the next section.
 
 ####1. Solution Design Approach
 
-The overall strategy for deriving a model architecture was to find suitable one from existing models and adapting it to current behavioural cloning task ...
+The overall strategy for deriving a model architecture was to find suitable one from existing models and adapting it to current behavioural cloning task .
 
 To take balance between simplicity and performance, we propose a network which inherits the main features of LeNet5 and Nvidia driving network. My first step was to use a convolution neural network model similar to the LeNet 5 and extend it into style of Nvidia model. I thought this model might be appropriate because the output just one regressor
 
