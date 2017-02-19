@@ -94,7 +94,7 @@ The final step was to run the simulator to see how well the car was driving arou
 
 ####2. Final Model Architecture
 
-The final model architecture (model.py lines 18-24) consisted of a convolution neural network with the following layers and layer sizes ...
+The final model architecture (model.py lines 63-84) consisted of three convolution layers, and each one followed by one mac pooling layer. After flattening, three dense (fully-connected) layers are appended and each one is followed by one dropout layer to reduce overfitting. The details in layers and layer sizes are elaborated in following diagram.
 
 Here is a visualization of the architecture (note: visualizing the architecture is optional according to the project rubric)
 
